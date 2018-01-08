@@ -26,7 +26,6 @@ import { Todo } from '../../todo';
         >
           {{ btnText }}
         </button>
-          <span *ngIf="newTodo.title">sa</span>
       </span>
         </div>
       </form>
@@ -35,7 +34,6 @@ import { Todo } from '../../todo';
 })
 export class FormComponent implements OnInit {
   btnText: string = 'Agregar';
-  saveEnabled: boolean = false;
   newTodo: Todo = new Todo();
   constructor(private todoDataService: DataService) { }
 
